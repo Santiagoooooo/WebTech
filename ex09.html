@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            margin-left: auto;
+            margin-right: auto;
+            background-color: grey;
+            width:20%;
+            padding:30px;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>In-Class Exercise 9 - HTML Form</h1>
+    <form>
+<div>
+<label for="Lastname">Last Name:</label>
+<input type="text" id="Lastname" name="Lastname" maxlength="100" 
+placeholder="Last name">
+</div>
+<label for="Firstname">First Name:</label>
+<input type="text" id="Firstname" name="Firstname" maxlength="100" 
+placeholder="First name">
+<div>
+<label for="emaill">Emaill:</label>
+<input type="email" id="email" name="emailaddress" maxlength="100" 
+placeholder="Email address">
+</div>
+<p>
+<dive>
+    Gender:
+    <label>Male
+        <input type="radio" name="gender"
+        value="male" />
+    </label>
+    <label>Female
+        <input type="radio" name="gender"
+        value="female"/>
+    </label>
+    <div>My favourite topics are:</div>
+<div>
+<input type="checkbox" id="Basic HTML" name="topics" value="Basic HTML" />
+<label for="Basic HTML">Basic HTML</label> </div>
+<div>
+<input type="checkbox" id="CSS" name="CSS" value="topics"/> <label for="CSS">CSS</label>
+</div> <div>
+<input type="checkbox" id="Tables" name="Tables" value="topics" checked />
+<label for="Tables">Tables</label>
+</div>
+</p>
+<div> <div>
+    <label for="grade-select">Which grade do you expect to receive?</label> </div>
+    <div>
+    <select name="grade" id="grade-select">
+    <option value="A">A</option> 
+    <option value="A-">A-</option>
+    <option value="B+">B+</option>
+    <option value="B">B</option>
+    <option value="B-">B-</option>
+    <option value="C+">C+</option>
+    
+        </select>
+      </div>
+    </div>
+    <div> <div>
+        <label for="comments">Leave a Reply:</label> </div>
+          <div>
+            <textarea
+        id="comments"
+        name="comments"
+        rows="5"
+        cols="25"
+        placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+        </div>
+        <div>
+            <button type="submit"><img src="images/mailbox.png" height="20"></button>
+            <button type="reset"><img src="images/reset.png" height="20"></button>
+        </div>
+</form>
+</dive>
+</body>
+</html>
