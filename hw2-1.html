@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hw2-1</title>
+    <style>
+      table,
+      td,
+      tr {
+        border: 0.5px solid lightgray;
+        text-align: center;
+        font-family: arial;
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+        border-spacing: 0;
+      }
+      caption {
+        font-size: 40px;
+        font-family: arial;
+      }
+      .first {
+        width: 15%;
+        height: 250px;
+      }
+      .img {
+        width: 30%;
+      }
+      .text {
+        width: 30%;
+      }
+      .price {
+        width: 10%;
+      }
+      .buy {
+        width: 10%;
+      }
+      #row2{
+          height: 15ex;
+      }
+      button {
+        background: linear-gradient(#51a9ee, #147bcd);
+        color: white;
+        font-size: 2ex;
+      }
+      p {
+        color: red;
+        font-family: arial;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        AirPods
+      </caption>
+      <tr>
+        <td class="first">AirPods Pro</td>
+        <td class="img">
+          <img
+            src="images/airpods-pro.jpg"
+            height="200"
+            alt="airpods-pro"
+            title="airpods-pro"
+          />
+        </td>
+        <td class="text">AirPods Pro</td>
+        <td class="price">$249.00</td>
+        <td class="buy">
+          <a
+            href="https://www.apple.com/us-hed/shop/product/MWP22AM/A/airpods-pro"
+            ><button>Buy</button></a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="2" class="first">AirPods</td>
+        <td rowspan="2" class="img">
+          <img
+            src="images/airpods.jpg"
+            height="200"
+            alt="airpods"
+            title="airpods"
+          />
+        </td>
+        <td class="text" id="row2">AirPods with Wireless Charging Case</td>
+        <td class="price" id="row2">$199.00</td>
+        <td class="buy" id="row2">
+          <a
+            href="https://www.apple.com/us-hed/shop/product/MRXJ2/airpods-with-wireless-charging-case"
+            ><button>Buy</button></a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td class="text">AirPods with Charging Case</td>
+        <td class="price">
+          <strike>$159.00</strike>
+          <p>$129.00</p>
+        </td>
+        <td class="buy">
+          <a
+            href="https://www.apple.com/us-hed/shop/product/MV7N2/airpods-with-charging-case"
+            ><button>Buy</button></a
+          >
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
