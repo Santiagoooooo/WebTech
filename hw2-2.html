@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hw2-2</title>
+    <style>
+        form{
+            width: 40%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        h1{
+            text-align: center;
+            font-family: arial;;
+        }
+        legend{
+            font-weight:550;
+            font-family: arial;
+        }
+        fieldset{
+            border:solid 1px lightgray;
+            font-family: arial;
+        }
+        button{
+            background-color: rgb(231, 235, 236);
+            font-size: 1.8ex;
+            border:solid 1px rgb(114, 111, 111);
+        }
+
+    </style>
+  </head>
+  <body>
+      <h1>Customer Feedback</h1>
+    <form>
+      <fieldset>
+        <legend>Your Information</legend>
+        <p>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter your name here" />
+        </div></p>
+        <p>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Enter your email here" />
+        </div></p>
+      </fieldset>
+      <p>
+      <fieldset>
+        <legend>Your Review</legend>
+        <p>
+        <div>
+          <label for="product-select"
+            >What Apple product did you purchase?</label
+          >
+          <select name="product" id="product-select">
+            <option value="A">AirPods Pro</option>
+            <option value="A-">AirPods with Wireless Charging Case</option>
+            <option value="B+">AirPods with Charging Case</option>
+          </select>
+        </div></p>
+        <p>
+        <div>
+         <label for="rate">What do you think of this product?</label>   
+        </div>
+        <div>
+        <label><input type="radio" name="rate" value="great">Great</label>
+        <label><input type="radio" name="rate" value="awesome">Awesome</label>    
+        <label><input type="radio" name="rate" value="good">Good</label>        
+        </div>
+    </p>
+    <div> <div>
+        <label for="comments">Comments:</label> </div>
+          <div>
+            <textarea
+        id="comments"
+        name="comments"
+        rows="8"
+        cols="60"></textarea>
+          </div>
+        </div>
+
+        <div>
+            <input type="checkbox" name="signup" value="signup" checked><label for="signup">Sign me up for email updates</label>
+        </div>
+        <p>
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </p>
+
+      </fieldset>
+    </p>
+    
+
+    </form>
+    <h3><a href="sitemap.html">My Work in WebTech</a></h3>
+        <!--“I,Xintong Zhang, pledge my honor that I have neither received nor provided unauthorized
+    assistance during the completion of this work.”--> 
+  </body>
+</html>
