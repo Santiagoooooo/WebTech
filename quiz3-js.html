@@ -35,27 +35,31 @@
       </li>
     </ol>
     <div>
-      <img alt="KembarWalker" height="100" src="images/kemba-walker.png" id="img1"/>
+      <img alt="KembarWalker" height="100" src="images/kemba-walker.png" />
       <button>I Want to Be Tall!</button>
     </div>
 
-    </div>
+
     <script>
-    let x = document.querySelector("h1")
-    function center(){
+        const heading = document.querySelector("h1");
 
-    }
-    document.querySelector("h1").onclick.style.right = "100px";
-   
+        function centerHeading(){
+        heading.style.textAlign = "center" ; 
+        }
 
-    function q(){
-        let image1 = document.getElementById("img1");
-        if (onclick.button
-        img1 = "images/tacko-fall.png"
-        )
-    }
+        heading.onclick = centerHeading;
 
-         document.getElementById("img1").onclick = q;
+        function changeImg(){
+        let celticImage = document.querySelector("img");
+        celticImage.src = "images/tacko-fall.png";
+        heading.innerText = "Tacko Fall";
+        }
+
+        document.querySelector("button").onclick = function(){
+            changeImg();
+        };
+
+
     </script>
   </body>
 </html>
