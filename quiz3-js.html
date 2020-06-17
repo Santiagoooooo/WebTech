@@ -39,27 +39,29 @@
       <button>I Want to Be Tall!</button>
     </div>
 
-
     <script>
         const heading = document.querySelector("h1");
-
-        function centerHeading(){
-        heading.style.textAlign = "center" ; 
+      function centerHeading() {
+       
+        if(heading.style.textAlign == "center"){
+            heading.style.textAlign="left";
         }
+        else{
+            heading.style.textAlign="center"
+        }
+      }
 
-        heading.onclick = centerHeading;
+      heading.onclick = centerHeading;
 
-        function changeImg(){
+      function changeImg() {
         let celticImage = document.querySelector("img");
         celticImage.src = "images/tacko-fall.png";
         heading.innerText = "Tacko Fall";
-        }
+      }
 
-        document.querySelector("button").onclick = function(){
-            changeImg();
-        };
-
-
+      document.querySelector("button").onclick = function () {
+        changeImg();
+      };
     </script>
   </body>
 </html>
