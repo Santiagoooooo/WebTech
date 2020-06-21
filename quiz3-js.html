@@ -44,7 +44,7 @@
       function centerHeading() {
        
         if(heading.style.textAlign == "center"){
-            heading.style.textAlign="left";
+            heading.style.textAlign="";
         }
         else{
             heading.style.textAlign="center"
@@ -53,15 +53,20 @@
 
       heading.onclick = centerHeading;
 
+      let celticImage = document.querySelector("img");
+
       function changeImg() {
-        let celticImage = document.querySelector("img");
+        
         celticImage.src = "images/tacko-fall.png";
         heading.innerText = "Tacko Fall";
       }
 
       document.querySelector("button").onclick = function () {
         changeImg();
+      
       };
+
+
     </script>
   </body>
 </html>
