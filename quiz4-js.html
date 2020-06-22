@@ -21,7 +21,7 @@
     </style>
   </head>
   <body>
-    <h1>JavaScript Quiz 2</h1>
+    <h1 id="heading">JavaScript Quiz 2</h1>
 
     <p>
       Please create functions (or just <strong>one</strong> function for bonus
@@ -45,31 +45,45 @@
       </li>
     </ol>
     <div>
-      <img alt="jaylen brown" src="images/jaylen-brown.png" id="brown" onclick="changeTextFirst()"/>
-      <img alt="tacko fall" src="images/tacko-fall.png" id="tacko" onclick="changeTextSecond()"/>
-      <img alt="tiger" src="images/tiger1.jpg" id="tiger" onclick="changePic()"/>
+      <img
+        alt="jaylen brown"
+        src="images/jaylen-brown.png"
+        id="brown"
+        onclick="changeTextFirst()"
+      />
+      <img
+        alt="tacko fall"
+        src="images/tacko-fall.png"
+        id="tacko"
+        onclick="changeTextSecond()"
+      />
+      <img
+        alt="tiger"
+        src="images/tiger1.jpg"
+        id="tiger"
+        onclick="changePic()"
+      />
     </div>
     <script>
       function changeTextFirst() {
-      let heading =document.getElementById("heading").innerText="Jaylen brown";
-      document.getElementById("heading").style.color ="brown";
-      document.getElementById("tacko").style.display ="none";
-      
-
+        let heading = (document.getElementById("heading").innerText =
+          "Jaylen brown");
+        document.getElementById("heading").style.color = "brown";
+        document.getElementById("tacko").style.display = "none";
       }
- function changeTextSecond() {
-      let heading =document.getElementById("heading").innerText="Tacko fall ";
-      document.getElementById("heading").style.color ="red";
-       document.getElementById("brown").style.display ="none";
-
+      function changeTextSecond() {
+        let heading = (document.getElementById("heading").innerText =
+          "Tacko fall ");
+        document.getElementById("heading").style.color = "red";
+        document.getElementById("brown").style.display = "none";
       }
 
       function changePic() {
-        document.getElementById("tacko").style.display ="inline"
-       document.getElementById("brown").style.display ="inline";
-
+        let heading = (document.getElementById("heading").innerText =
+          "Let's Go Celtics! ");
+        document.getElementById("tacko").style.display = "inline";
+        document.getElementById("brown").style.display = "inline";
       }
-     
     </script>
   </body>
 </html>
