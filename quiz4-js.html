@@ -45,29 +45,31 @@
       </li>
     </ol>
     <div>
-      <img alt="jaylen brown" src="images/jaylen-brown.png" id="brown" />
-      <img alt="tacko fall" src="images/tacko-fall.png" id="tacko" />
-      <img alt="tiger" src="images/tiger1.jpg" id="tiger" />
+      <img alt="jaylen brown" src="images/jaylen-brown.png" id="brown" onclick="changeTextFirst()"/>
+      <img alt="tacko fall" src="images/tacko-fall.png" id="tacko" onclick="changeTextSecond()"/>
+      <img alt="tiger" src="images/tiger1.jpg" id="tiger" onclick="changePic()"/>
     </div>
     <script>
-     function changeTextFirst() {
+      function changeTextFirst() {
       let heading =document.getElementById("heading").innerText="Jaylen brown";
       document.getElementById("heading").style.color ="brown";
-
-      }
-
-      document.getElementById("brown").onclick = changeTextFirst;
-
-
-
-      function changeTextSec() {
-      let heading =document.getElementById("heading").innerText="Tacko Fall";
-      document.getElementById("heading").style.color ="red";
-
-      }
-
-      document.getElementById("heading").onclick = changeTextSec;
+      document.getElementById("tacko").style.display ="none";
       
+
+      }
+ function changeTextSecond() {
+      let heading =document.getElementById("heading").innerText="Tacko fall ";
+      document.getElementById("heading").style.color ="red";
+       document.getElementById("brown").style.display ="none";
+
+      }
+
+      function changePic() {
+        document.getElementById("tacko").style.display ="inline"
+       document.getElementById("brown").style.display ="inline";
+
+      }
+     
     </script>
   </body>
 </html>
