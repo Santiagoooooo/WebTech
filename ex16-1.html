@@ -74,12 +74,10 @@
           alert("Please enter both name and age");
         } else if (isNaN(age)) {
           alert("please enter a number for age");
-        } else if (hide.checked){
-          let inputs =
-            "name: " + userName + "\ngender: " + gender;
+        } else if (hide.checked) {
+          let inputs = "name: " + userName + "\ngender: " + gender;
           myForm["result"].value = inputs;
-        }
-        else {
+        } else {
           let inputs =
             "name: " + userName + " \nage: " + age + "\ngender: " + gender;
           myForm["result"].value = inputs;
