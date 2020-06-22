@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz 4 - JavaScript</title>
+    <style>
+      body {
+        margin: 30px;
+      }
+      p + ol {
+        margin-top: -10px;
+      }
+      div {
+        text-align: center;
+      }
+      img {
+        border: 1px green solid;
+        height: 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript Quiz 2</h1>
+
+    <p>
+      Please create functions (or just <strong>one</strong> function for bonus
+      points) to implement the features below:
+    </p>
+    <ol>
+      <li>
+        when user clicks on <em>first</em> picture, <code>h1</code> must be
+        changed to "<strong>Jaylen Brown</strong>" with <em>brown</em> color,
+        the <em>second</em> picture must disappear;
+      </li>
+      <li>
+        when user clicks on the <em>second</em> picture, <code>h1</code> must be
+        changed to "<strong>Tacko Fall</strong>" with <em>red</em> color,, the
+        <em>first</em> picture must disappear;
+      </li>
+      <li>
+        when user clicks on the <em>third</em> picture, <code>h1</code> must be
+        changed to "<strong>Let's Go, Celtics!</strong>" with
+        <em>green</em> color, the <em>first</em> two pictures must re-appear.
+      </li>
+    </ol>
+    <div>
+      <img alt="jaylen brown" src="images/jaylen-brown.png" id="brown" />
+      <img alt="tacko fall" src="images/tacko-fall.png" id="tacko" />
+      <img alt="tiger" src="images/tiger1.jpg" id="tiger" />
+    </div>
+    <script>
+     function changeTextFirst() {
+      let heading =document.getElementById("heading").innerText="Jaylen brown";
+      document.getElementById("heading").style.color ="brown";
+
+      }
+
+      document.getElementById("brown").onclick = changeText;
+
+
+
+      function changeTextSec() {
+      let heading =document.getElementById("heading").innerText="Tacko Fall";
+      document.getElementById("heading").style.color ="red";
+
+      }
+
+      document.getElementById("tacko").onclick = changeText;
+      
+    </script>
+  </body>
+</html>
