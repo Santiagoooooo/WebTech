@@ -74,7 +74,6 @@
 
     <script>
       function myFunction() {
-        let y, text;
 
         y = document.getElementById("celsius").value;
         z = document.getElementById("fahre").value;
@@ -89,7 +88,7 @@
       function convert() {
         let cel = document.getElementById("celsius").value;
         let fahr = document.getElementById("fahre").value;
-        let x;
+        
         if (cel != "") {
           x = (document.getElementById("celsius").value * 9) / 5 + 32;
           document.getElementById("fahre").value = Math.round(x);
