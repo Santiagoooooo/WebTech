@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Quiz-5: Yet Another Simple Calculator</title>
+    <style>
+      body {
+        font-family: Arial;
+      }
+      form {
+        padding-top: 10px;
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: Silver;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      #question {
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      form div {
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="center">Yet Another Simple Calculator</h1>
+    <div class="center">
+      <form action="" method="post">
+        <div>
+          <label
+            >From:
+            <input name="from" size="5" type="text" />
+          </label>
+          <label
+            >To:
+            <input name="to" size="5" type="text" />
+          </label>
+        </div>
+        <div>
+          <input name="sum" type="button" value="Sum" id="sum-btn" />
+          <input name="reset" type="reset" value="Clear" />
+        </div>
+        <div>The sum of squares is <span id="result">?</span>.</div>
+      </form>
+    </div>
+
+    <p id="question">
+      Please use <code>for</code> loop to sum up <strong>squares</strong> of all
+      the integers between these two numbers (inclusive). You don't have to
+      validate inputs; in other words, you can assume both inputs are integers
+      (you may still need to convert) and the second number is greater than the
+      first number.
+    </p>
+    <script>
+      function f() {
+        const myForm = document.querySelector("form");
+        const a = myForm["from"].value;
+        const b = myForm["to"].value;
+
+        let sum = 0;
+        for (let i = a; i < parseInt(b) + 1; i++) {
+          sum = sum + i ** 2;
+          //console.log("i= " + i);
+          //console.log("sum= " + sum);
+        }
+
+        document.getElementById("result").textContent = sum;
+      }
+
+      document.getElementById("sum-btn").onclick = f;
+    </script>
+  </body>
+</html>

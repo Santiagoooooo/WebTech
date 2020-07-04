@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex18</title>
+    <style>
+        img{
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+        }
+    </style>
+  </head>
+  <body>
+      <div>
+    <img src="images/tiger1.jpg" alt="tiger1" />
+    <h1 id="description">tiger 1</h1>
+    </div>
+
+    <script>
+      const slides = [
+        "images/tiger1.jpg",
+        "images/tiger2.jpg",
+        "images/tiger3.jpg",
+        "images/tiger4.jpg"
+      ];
+
+      const colors = ["red", "yellow","blue","green"];
+
+      const texts = ["tiger1","tiger2","tiger3","tiger4"]
+
+      let i = 0;
+
+      const image = document.querySelector("img");
+
+      function slideShow() {
+        //console.log("running..");
+        if (i === slides.length) {
+          i = 0;
+        } 
+        image.src = slides[i];
+        image.style.borderColor = colors[i];
+        document.getElementById("description").innerText = texts[i];
+        
+        i = i + 1;
+        
+        setTimeout(slideShow, 1000);
+      }
+
+      document.querySelector("body").onload = slideShow;
+    </script>
+    <h3><a href="sitemap.html">My Work in WebTech</a></h3>
+  </body>
+</html>
